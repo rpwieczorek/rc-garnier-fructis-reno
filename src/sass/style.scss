@@ -601,7 +601,7 @@ body {
       }
 
       @media screen and (max-width: 500px) {
-        font-size: 54px;
+        font-size: 44px;
       }
     }
 
@@ -804,7 +804,9 @@ body {
 
   .es-benefits1 {
     position: relative;
-
+    &__imgCnt {
+      background-color: #006237;
+    }
     &__imgCnt .img {
       @media screen and (max-width: 400px) {
         min-height: 250px;
