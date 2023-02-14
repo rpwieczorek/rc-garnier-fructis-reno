@@ -780,9 +780,11 @@ body {
       font-family: 'Bowlby One', 'Arial Black',sans-serif;
       font-size: 22px;
       font-weight: 400;
+      font-style: italic;
+      letter-spacing: 2px;
       text-transform: uppercase;
       transform-origin: 0 0;
-      transform: rotate(-10deg);
+      transform: rotate(-5deg);
       & span {
         font-size: 30px;
         font-weight: 900;
@@ -791,7 +793,34 @@ body {
         }
       }
       & sup {
-        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        font-family: $regularFont;
+        font-weight: 900;
+        // line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+        
+      }
+      &--1 {
+        font-size: 35px;
+        top: 3px;
+        left: -2px;
+        @media screen and (min-width: 700px) {
+          font-size: 50px;
+          top: 5px;
+          left: -3px;
+        }
+      }
+      &--2 {
+        font-size: 10px;
+        top: -15px;
+        left:4px;
+        @media screen and (min-width: 700px) {
+          font-size: 15px;
+          top: -20px;
+          left:4px;
+        }
       }
 
       @media screen and (min-width: 700px) {
